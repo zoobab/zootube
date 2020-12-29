@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '<meta name="viewport" content="width=device-width, initial-scale=1.0"><center><h1>Welcome to Zootube!</h1>\n<i>Youtube audio only</i><br>Example: <a href="/api?yid=k6s1-caKRtQ">k6s1-caKRtQ</a></center>'
+    return '<meta name="viewport" content="width=device-width, initial-scale=1.0"><center><h1>Zootube</h1><br>Example: <a href="/api?yid=k6s1-caKRtQ">k6s1-caKRtQ</a></center>'
 
 @app.route('/api')
 def myimage():
