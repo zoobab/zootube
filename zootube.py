@@ -1,11 +1,10 @@
-# Usage: Point your browser to http://localhost:5000/?yid=k6s1-caKRtQ
 from flask import Flask, request, send_file
 import os
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '<meta name="viewport" content="width=device-width, initial-scale=1.0"><center><h1>Welcome to Zootube!</h1>\n<i>Youtube audio only</i></center>'
+    return '<meta name="viewport" content="width=device-width, initial-scale=1.0"><center><h1>Welcome to Zootube!</h1>\n<i>Youtube audio only</i><br>Example: <a href="/api?yid=k6s1-caKRtQ">k6s1-caKRtQ</a></center>'
 
 @app.route('/api')
 def myimage():
