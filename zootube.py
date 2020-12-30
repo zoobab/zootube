@@ -15,5 +15,5 @@ def myimage():
         print ("[INFO] File " + filename + " already exist, not redownloading...")
     else:
         os.system('youtube-dl --write-info-json --write-thumbnail --audio-format ' + ext + ' -x -o ' + filename + ' ' + yid)
-    print '[INFO] Serving file...'
+    print ('[INFO] Serving file...')
     return send_file(filename, mimetype='audio/mp3', as_attachment=False)
